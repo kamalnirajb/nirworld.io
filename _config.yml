@@ -1,0 +1,20 @@
+title: Niraj Kumar — Portfolio
+description: "Niraj Kumar — Mobile Architect & AI Solutions Leader with 14+ years experience in iOS, Android, AI/ML, ARKit, and enterprise mobile delivery. PMP® Certified."
+url: "" 
+baseurl: ""
+author: Niraj Kumar
+linkedin: https://www.linkedin.com/in/kamalnirajb/
+github: https://github.com/kamalnirajb
+
+# Build settings
+markdown: kramdown
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
