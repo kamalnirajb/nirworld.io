@@ -69,13 +69,14 @@ img { max-width: 100%; display: block; }
   height: 100%;
   display: flex; align-items: center; justify-content: space-between;
 }
-.nav-logo {
-  font-size: 1.5rem; font-weight: 800;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  letter-spacing: -0.5px;
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  transition: opacity var(--transition);
 }
-.nav-logo .dot { color: var(--accent); -webkit-text-fill-color: var(--accent); }
+.nav-logo-img:hover { opacity: 0.8; }
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a {
   font-size: 0.875rem; font-weight: 500;
@@ -126,6 +127,12 @@ img { max-width: 100%; display: block; }
   border-radius: 50%; object-fit: cover;
   border: 3px solid var(--border-accent);
   box-shadow: 0 0 40px rgba(0,200,255,0.3);
+  animation: floatAvatar 6s ease-in-out infinite;
+}
+@keyframes floatAvatar {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 .avatar-ring {
   position: absolute; inset: -8px;
