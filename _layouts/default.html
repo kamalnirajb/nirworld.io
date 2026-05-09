@@ -31,9 +31,12 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 {{ site.author }} · Built with ❤️ for GitHub Pages</p>
+    <p>© {{ site.data.content.footer.year }} {{ site.author }} · {{ site.data.content.footer.text }}</p>
   </footer>
 
+  <script>
+    window.heroTypedTitles = {{ site.data.content.hero.typed_titles | jsonify }};
+  </script>
   <script src="{{ '/main.js' | relative_url }}"></script>
 </body>
 </html>

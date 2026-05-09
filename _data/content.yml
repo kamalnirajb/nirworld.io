@@ -15,15 +15,29 @@ nav:
 
 # Hero Section
 hero:
-  badge: "PMP® · 14+ Years"
+  badge: "PMP® · Mobile Apps Architect · 14+ Years"
   name_first: "Niraj"
   name_last: "Kumar"
+  typed_titles:
+    - "Mobile Apps Architect"
+    - "AI Solutions Leader"
+    - "iOS & Augmented Reality Expert"
+    - "PMP® Certified Consultant"
+    - "Spatial Computing Pioneer"
+    - "Android Architect"
+    - "Cross-Platform Solutions Architect"
+    - "React Native Developer"
+    - "Ionic Developer"
+    - "Technical Consultant"
+    - "Freelance Developer"
   location: "📍 Patna, Bihar, India"
   cta_primary: "Get In Touch"
   cta_secondary: "View Portfolio"
 
 # About Section
 about:
+  title_plain: "About"
+  title_accent: "Me"
   paragraphs:
     - "Mobile Architect with <strong>14+ years</strong> of experience designing and shipping production-grade applications across iOS, Android, and cross-platform stacks — now leading the next generation of <strong>AI-enabled mobile experiences</strong>."
     - "Proven ability to translate ambiguous business needs into scalable technical architectures that blend native mobile excellence (<em>Swift, SwiftUI, ARKit, RealityKit</em>) with modern AI capabilities (<em>LLMs, RAG, Agentic AI, MCP, on-device ML</em>)."
@@ -43,6 +57,10 @@ about:
       label: "Certifications"
 
 # Skills Section
+skills_section:
+  title_plain: "Core"
+  title_accent: "Skills"
+
 skills:
   - title: "AI & Intelligent Systems"
     icon: "🤖"
@@ -63,8 +81,9 @@ skills:
     items:
       - "Swift / SwiftUI"
       - "ARKit / RealityKit"
-      - "iOS SDK"
       - "Android (Java)"
+      - "iOS SDK"
+      - "Cross-Platform Architecture"
       - "React Native"
       - "Ionic / Cordova"
       - "MVVM / Clean Arch"
@@ -93,6 +112,10 @@ skills:
       - "Technical Docs"
 
 # Experience Section
+experience_section:
+  title_plain: "Professional"
+  title_accent: "Experience"
+
 experience:
   - title: "Managing Consultant — Mobile & AI Practice"
     company: "eNoah iSolutions India Pvt. Ltd. · Chennai, India"
@@ -136,6 +159,10 @@ experience:
       - "Published <strong>Animated TableView module</strong> on the Appcelerator Marketplace."
 
 # Portfolio Section
+portfolio_section:
+  title_plain: "Selected"
+  title_accent: "Portfolio"
+
 portfolio:
   - title: "Conja — AI + AR Spatial Learning"
     client: "eNoah iSolutions"
@@ -169,6 +196,13 @@ portfolio:
     tags: ["Socket.io", "GPS", "SDK", "Titanium"]
 
 # Education Section
+education_section:
+  title_plain: "Education &"
+  title_accent: "Certifications"
+  edu_heading: "🎓 Education"
+  certs_heading: "📜 Certifications"
+  awards_heading: "🏆 Awards & Recognition"
+
 education:
   - title: "Master of Business Administration"
     badge: "MBA · CGPA 8.31"
@@ -211,6 +245,8 @@ awards:
 
 # Contact Section
 contact:
+  title_plain: "Get In"
+  title_accent: "Touch"
   subtitle: "Open to consulting, architecture advisory, and leadership opportunities."
   links:
     - id: "email-link"
@@ -237,3 +273,8 @@ contact:
     id: "location-card"
     icon: "📍"
     text: "Patna, Bihar, India"
+
+# Footer Section
+footer:
+  year: "2025"
+  text: "Built with ❤️ for GitHub Pages"

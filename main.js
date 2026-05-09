@@ -91,7 +91,7 @@ navLinks.querySelectorAll('a').forEach(a => {
 /* =============================================
    TYPED TITLE EFFECT
 ============================================= */
-const titles = [
+const titles = window.heroTypedTitles || [
   'Mobile Architect',
   'AI Solutions Leader',
   'iOS & ARKit Expert',
@@ -108,7 +108,7 @@ function type() {
     cIdx++;
     if (cIdx === current.length) {
       deleting = true;
-      setTimeout(type, 2000);
+      setTimeout(type, 3500);
       return;
     }
   } else {
@@ -119,7 +119,7 @@ function type() {
       tIdx = (tIdx + 1) % titles.length;
     }
   }
-  setTimeout(type, deleting ? 50 : 80);
+  setTimeout(type, deleting ? 35 : 85);
 }
 type();
 

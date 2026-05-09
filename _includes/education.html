@@ -1,11 +1,11 @@
   <!-- EDUCATION & CERTS -->
   <section id="education" class="section">
     <div class="container">
-      <h2 class="section-title">Education & <span class="accent">Certifications</span></h2>
+      <h2 class="section-title">{{ site.data.content.education_section.title_plain }} <span class="accent">{{ site.data.content.education_section.title_accent }}</span></h2>
       <div class="edu-certs-grid">
 
         <div class="edu-column">
-          <h3 class="sub-heading">🎓 Education</h3>
+          <h3 class="sub-heading">{{ site.data.content.education_section.edu_heading }}</h3>
           {% for edu in site.data.content.education %}
           <div class="edu-card">
             <div class="edu-badge {% if edu.badge_class %}{{ edu.badge_class }}{% endif %}">{{ edu.badge }}</div>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="cert-column">
-          <h3 class="sub-heading">📜 Certifications</h3>
+          <h3 class="sub-heading">{{ site.data.content.education_section.certs_heading }}</h3>
           <div class="cert-list">
             {% for cert in site.data.content.certifications %}
             <div class="cert-item">
@@ -30,7 +30,7 @@
             {% endfor %}
           </div>
 
-          <h3 class="sub-heading mt">🏆 Awards & Recognition</h3>
+          <h3 class="sub-heading mt">{{ site.data.content.education_section.awards_heading }}</h3>
           <div class="awards-list">
             {% for award in site.data.content.awards %}
             <div class="award-item">{{ award }}</div>
