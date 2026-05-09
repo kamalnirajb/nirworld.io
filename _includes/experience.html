@@ -4,111 +4,25 @@
       <h2 class="section-title">Professional <span class="accent">Experience</span></h2>
       <div class="timeline">
 
+        {% for job in site.data.content.experience %}
         <div class="timeline-item" data-aos>
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3>Managing Consultant — Mobile & AI Practice</h3>
-                <p class="company">eNoah iSolutions India Pvt. Ltd. · Chennai, India</p>
+                <h3>{{ job.title }}</h3>
+                <p class="company">{{ job.company }}</p>
               </div>
-              <span class="timeline-date">Sep 2023 – Present</span>
+              <span class="timeline-date">{{ job.date }}</span>
             </div>
             <ul>
-              <li>Architect AI-enabled mobile solutions end-to-end from client discovery through production rollout.</li>
-              <li>Led architecture of <strong>Conja</strong> — flagship spatial-learning iOS product fusing ARKit/RealityKit with Google ML Kit and Vertex AI.</li>
-              <li>Designed REST APIs powering iOS clients with low-latency, secure auth, and clean contract-first design.</li>
-              <li>Authored trade-off analyses and business-facing proposals shortening decision cycles for senior stakeholders.</li>
+              {% for detail in job.details %}
+              <li>{{ detail }}</li>
+              {% endfor %}
             </ul>
           </div>
         </div>
-
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Technology Lead — iOS & Emerging Tech</h3>
-                <p class="company">eNoah iSolutions India Pvt. Ltd. · Chennai, India</p>
-              </div>
-              <span class="timeline-date">Sep 2022 – Aug 2023</span>
-            </div>
-            <ul>
-              <li>Technical leadership across iOS, Android, and cross-platform engagements.</li>
-              <li>Delivered AR- and AI-enabled features ahead of market, establishing early credibility on Apple's ARKit stack.</li>
-              <li>Formalised coding conventions and review gates improving release predictability.</li>
-              <li>Mentored engineers on iOS best practices, testability, and clean architecture.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Senior Software Engineer</h3>
-                <p class="company">eNoah iSolutions India Pvt. Ltd. · Chennai, India</p>
-              </div>
-              <span class="timeline-date">Jan 2018 – Aug 2022</span>
-            </div>
-            <ul>
-              <li>Owned iOS solution design from requirements through production release on App Store and enterprise channels.</li>
-              <li>Resolved complex performance and memory issues, raising stability and App Store ratings.</li>
-              <li>🏆 <strong>Customer Satisfaction Excellence Award</strong> — July 2020.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Senior Software Engineer</h3>
-                <p class="company">Talaria Consulting International · Ras Al Khaimah, UAE</p>
-              </div>
-              <span class="timeline-date">Apr 2017 – Dec 2017</span>
-            </div>
-            <ul>
-              <li>Delivered iOS solutions for regional clients; led requirements discussions, technical design, and production support.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Software Engineer — iOS & Android</h3>
-                <p class="company">Technical Arts Concepts M.E. (TACME) LLC · Dubai, UAE</p>
-              </div>
-              <span class="timeline-date">Mar 2015 – Feb 2017</span>
-            </div>
-            <ul>
-              <li>Built 10+ iOS and Android apps for UAE government and enterprise: Ajman Municipality, DMCA, ADNOC, Ministry of Finance UAE, Khorfakkan Municipality.</li>
-              <li>Set up Xcode/Android Studio environments, feature pipelines, and release processes from scratch.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Earlier Career — Software Engineer</h3>
-                <p class="company">IndiaNIC Infotech · Acumen Consultancy · India</p>
-              </div>
-              <span class="timeline-date">Jul 2012 – Jan 2015</span>
-            </div>
-            <ul>
-              <li>Transitioned from web (PHP/CodeIgniter) into mobile via Appcelerator Titanium, then native iOS and Android.</li>
-              <li>Published <strong>Animated TableView module</strong> on the Appcelerator Marketplace.</li>
-            </ul>
-          </div>
-        </div>
+        {% endfor %}
 
       </div>
     </div>

@@ -2,27 +2,17 @@
   <section id="contact" class="section section-dark">
     <div class="container contact-container">
       <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
-      <p class="contact-sub">Open to consulting, architecture advisory, and leadership opportunities.</p>
+      <p class="contact-sub">{{ site.data.content.contact.subtitle }}</p>
       <div class="contact-cards">
-        <a href="mailto:kamal.nirajb@gmail.com" class="contact-card" id="email-link">
-          <span class="contact-icon">✉️</span>
-          <span>kamal.nirajb@gmail.com</span>
+        {% for link in site.data.content.contact.links %}
+        <a href="{{ link.url }}" class="contact-card" {% if link.id != "" %}id="{{ link.id }}"{% endif %} {% if link.target != "" %}target="{{ link.target }}" rel="noopener noreferrer"{% endif %}>
+          <span class="contact-icon">{{ link.icon }}</span>
+          <span>{{ link.text }}</span>
         </a>
-        <a href="tel:+917004282937" class="contact-card" id="phone-link">
-          <span class="contact-icon">📞</span>
-          <span>+91 70042 82937</span>
-        </a>
-        <a href="https://www.linkedin.com/in/kamalnirajb/" class="contact-card" target="_blank" rel="noopener noreferrer">
-          <span class="contact-icon">💼</span>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/kamalnirajb" class="contact-card" target="_blank" rel="noopener noreferrer">
-          <span class="contact-icon">💻</span>
-          <span>GitHub</span>
-        </a>
-        <div class="contact-card" id="location-card">
-          <span class="contact-icon">📍</span>
-          <span>Patna, Bihar, India</span>
+        {% endfor %}
+        <div class="contact-card" id="{{ site.data.content.contact.location.id }}">
+          <span class="contact-icon">{{ site.data.content.contact.location.icon }}</span>
+          <span>{{ site.data.content.contact.location.text }}</span>
         </div>
       </div>
     </div>

@@ -3,16 +3,16 @@
     <canvas id="particleCanvas"></canvas>
     <div class="hero-content">
       <div class="hero-avatar">
-        <img src="profile_hero.png" alt="Niraj Kumar" />
+        <img src="{{ '/profile_hero.png' | relative_url }}" alt="Niraj Kumar" />
         <div class="avatar-ring"></div>
       </div>
-      <div class="hero-badge">PMP® · 14+ Years</div>
-      <h1 class="hero-name">Niraj <span class="accent">Kumar</span></h1>
+      <div class="hero-badge">{{ site.data.content.hero.badge }}</div>
+      <h1 class="hero-name">{{ site.data.content.hero.name_first }} <span class="accent">{{ site.data.content.hero.name_last }}</span></h1>
       <p class="hero-title" id="typed-title"></p>
-      <p class="hero-location">📍 Patna, Bihar, India</p>
+      <p class="hero-location">{{ site.data.content.hero.location }}</p>
       <div class="hero-cta">
-        <a href="mailto:kamal.nirajb@gmail.com" class="btn btn-primary" id="hero-contact-btn">Get In Touch</a>
-        <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
+        <a href="mailto:kamal.nirajb@gmail.com" class="btn btn-primary" id="hero-contact-btn">{{ site.data.content.hero.cta_primary }}</a>
+        <a href="#portfolio" class="btn btn-ghost">{{ site.data.content.hero.cta_secondary }}</a>
       </div>
     </div>
     <div class="scroll-indicator">

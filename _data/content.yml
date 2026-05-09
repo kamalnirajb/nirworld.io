@@ -1,0 +1,239 @@
+# Site Navigation
+nav:
+  - title: "About"
+    link: "#about"
+  - title: "Skills"
+    link: "#skills"
+  - title: "Experience"
+    link: "#experience"
+  - title: "Portfolio"
+    link: "#portfolio"
+  - title: "Education"
+    link: "#education"
+  - title: "Contact"
+    link: "#contact"
+
+# Hero Section
+hero:
+  badge: "PMP® · 14+ Years"
+  name_first: "Niraj"
+  name_last: "Kumar"
+  location: "📍 Patna, Bihar, India"
+  cta_primary: "Get In Touch"
+  cta_secondary: "View Portfolio"
+
+# About Section
+about:
+  paragraphs:
+    - "Mobile Architect with <strong>14+ years</strong> of experience designing and shipping production-grade applications across iOS, Android, and cross-platform stacks — now leading the next generation of <strong>AI-enabled mobile experiences</strong>."
+    - "Proven ability to translate ambiguous business needs into scalable technical architectures that blend native mobile excellence (<em>Swift, SwiftUI, ARKit, RealityKit</em>) with modern AI capabilities (<em>LLMs, RAG, Agentic AI, MCP, on-device ML</em>)."
+    - "PMP® certified managing consultant who pairs engineering depth with client-facing discipline — trusted to architect, lead, and deliver across enterprise, government, and innovation programs."
+  stats:
+    - id: "stat-years"
+      target: 14
+      label: "Years Experience"
+    - id: "stat-apps"
+      target: 10
+      label: "Apps Shipped"
+    - id: "stat-clients"
+      target: 8
+      label: "Gov & Enterprise Clients"
+    - id: "stat-certs"
+      target: 5
+      label: "Certifications"
+
+# Skills Section
+skills:
+  - title: "AI & Intelligent Systems"
+    icon: "🤖"
+    tag_class: "tag-ai"
+    items:
+      - "LLMs"
+      - "Agentic AI"
+      - "RAG Pipelines"
+      - "MCP"
+      - "Vertex AI"
+      - "Google ML Kit"
+      - "OpenCV"
+      - "N8N Automation"
+      - "Prompt Engineering"
+  - title: "Mobile Architecture"
+    icon: "📱"
+    tag_class: "tag-mobile"
+    items:
+      - "Swift / SwiftUI"
+      - "ARKit / RealityKit"
+      - "iOS SDK"
+      - "Android (Java)"
+      - "React Native"
+      - "Ionic / Cordova"
+      - "MVVM / Clean Arch"
+      - "Offline-first"
+  - title: "Backend & DevOps"
+    icon: "⚙️"
+    tag_class: "tag-backend"
+    items:
+      - "REST API Design"
+      - "Firebase"
+      - "Socket.io"
+      - "XMPP / Openfire"
+      - "Git / Jenkins"
+      - "Fastlane"
+      - "CI/CD Pipelines"
+      - "Python"
+  - title: "Leadership & Delivery"
+    icon: "🏆"
+    tag_class: "tag-lead"
+    items:
+      - "PMP®"
+      - "Agile Delivery"
+      - "Architecture Reviews"
+      - "Client Engagement"
+      - "Team Mentoring"
+      - "Technical Docs"
+
+# Experience Section
+experience:
+  - title: "Managing Consultant — Mobile & AI Practice"
+    company: "eNoah iSolutions India Pvt. Ltd. · Chennai, India"
+    date: "Sep 2023 – Present"
+    details:
+      - "Architect AI-enabled mobile solutions end-to-end from client discovery through production rollout."
+      - "Led architecture of <strong>Conja</strong> — flagship spatial-learning iOS product fusing ARKit/RealityKit with Google ML Kit and Vertex AI."
+      - "Designed REST APIs powering iOS clients with low-latency, secure auth, and clean contract-first design."
+      - "Authored trade-off analyses and business-facing proposals shortening decision cycles for senior stakeholders."
+  - title: "Technology Lead — iOS & Emerging Tech"
+    company: "eNoah iSolutions India Pvt. Ltd. · Chennai, India"
+    date: "Sep 2022 – Aug 2023"
+    details:
+      - "Technical leadership across iOS, Android, and cross-platform engagements."
+      - "Delivered AR- and AI-enabled features ahead of market, establishing early credibility on Apple's ARKit stack."
+      - "Formalised coding conventions and review gates improving release predictability."
+      - "Mentored engineers on iOS best practices, testability, and clean architecture."
+  - title: "Senior Software Engineer"
+    company: "eNoah iSolutions India Pvt. Ltd. · Chennai, India"
+    date: "Jan 2018 – Aug 2022"
+    details:
+      - "Owned iOS solution design from requirements through production release on App Store and enterprise channels."
+      - "Resolved complex performance and memory issues, raising stability and App Store ratings."
+      - "🏆 <strong>Customer Satisfaction Excellence Award</strong> — July 2020."
+  - title: "Senior Software Engineer"
+    company: "Talaria Consulting International · Ras Al Khaimah, UAE"
+    date: "Apr 2017 – Dec 2017"
+    details:
+      - "Delivered iOS solutions for regional clients; led requirements discussions, technical design, and production support."
+  - title: "Software Engineer — iOS & Android"
+    company: "Technical Arts Concepts M.E. (TACME) LLC · Dubai, UAE"
+    date: "Mar 2015 – Feb 2017"
+    details:
+      - "Built 10+ iOS and Android apps for UAE government and enterprise: Ajman Municipality, DMCA, ADNOC, Ministry of Finance UAE, Khorfakkan Municipality."
+      - "Set up Xcode/Android Studio environments, feature pipelines, and release processes from scratch."
+  - title: "Earlier Career — Software Engineer"
+    company: "IndiaNIC Infotech · Acumen Consultancy · India"
+    date: "Jul 2012 – Jan 2015"
+    details:
+      - "Transitioned from web (PHP/CodeIgniter) into mobile via Appcelerator Titanium, then native iOS and Android."
+      - "Published <strong>Animated TableView module</strong> on the Appcelerator Marketplace."
+
+# Portfolio Section
+portfolio:
+  - title: "Conja — AI + AR Spatial Learning"
+    client: "eNoah iSolutions"
+    icon: "🧠"
+    featured: true
+    description: "Immersive spatial-learning iOS platform combining ARKit/RealityKit, Google ML Kit on-device vision (pose, face, object detection), Vertex AI, Firebase, and real-time media via HaishinKit."
+    tags: ["ARKit", "RealityKit", "ML Kit", "Vertex AI", "SwiftUI"]
+  - title: "Moodle & Totara LMS Apps"
+    client: "eNoah iSolutions | Mobile Learning"
+    icon: "📚"
+    featured: false
+    description: "Multi-tenant mobile LMS on Ionic + Apache Cordova with offline WebView, multi-provider SCORM content, push notifications, AR features — later migrated to React Native."
+    tags: ["Ionic", "Cordova", "React Native", "SCORM", "Android", "iOS"]
+  - title: "ADPSecure Chat"
+    client: "Abu Dhabi Police · e-Government"
+    icon: "🔒"
+    featured: false
+    description: "Secure XMPP-based real-time chat platform with high-grade encryption, screenshot detection, auto-deletion, and time-bound message delivery distributed via enterprise ad-hoc."
+    tags: ["XMPP", "Openfire", "iOS", "Encryption", "Enterprise"]
+  - title: "UAE Government Apps"
+    client: "TACME LLC, Dubai"
+    icon: "🏛️"
+    featured: false
+    description: "Bilingual, map-driven, and service-delivery apps for ADNOC Distribution, Dubai Parks & Beaches (with AR), Ajman Municipality, DMCA, Ministry of Finance UAE."
+    tags: ["iOS", "Android", "AR", "Bilingual", "Maps"]
+  - title: "Consumer & Developer Tools"
+    client: "Various Clients"
+    icon: "💬"
+    featured: false
+    description: "Customer Engage (Socket.io live-support SDK), Novus dealer-finder, App 301 community, Walk-ins appointments, Prep Words, WirelessQpons (GPS discounts), and the Animated TableView Titanium module."
+    tags: ["Socket.io", "GPS", "SDK", "Titanium"]
+
+# Education Section
+education:
+  - title: "Master of Business Administration"
+    badge: "MBA · CGPA 8.31"
+    badge_class: "gold"
+    institution: "Dr. D. Y. Patil Vidyapeeth, Pune"
+    year: "Sep 2024"
+  - title: "Master of Computer Applications"
+    badge: "MCA · CGPA 9.09 🥇"
+    badge_class: "gold"
+    institution: "NIST — Berhampur, Odisha · <strong>Gold Medalist</strong>"
+    year: "Jul 2012"
+  - title: "Bachelor of Computer Applications"
+    badge: "BCA (Hons.) · 70.53%"
+    badge_class: ""
+    institution: "Gaya College — Gaya, Bihar"
+    year: "May 2009"
+
+certifications:
+  - title: "Project Management Professional (PMP®)"
+    institution: "Project Management Institute, USA · Feb 2020 – Feb 2026"
+    dot_class: "pmp"
+  - title: "AI Agents Fundamentals"
+    institution: "Hugging Face · Jul 2025"
+    dot_class: "ai"
+  - title: "PTE Academic (Score 58)"
+    institution: "Pearson Vue · 2024 – 2026"
+    dot_class: "pte"
+  - title: "AR and the Web"
+    institution: "CurtinX / Curtin University · Mar 2023"
+    dot_class: "ar"
+  - title: "French Level A1"
+    institution: "Indian Institute of Tourism & Travel Management · Nov 2023"
+    dot_class: "fr"
+
+awards:
+  - "🥇 Gold Medal — Best academic performance MCA"
+  - "🏅 Customer Satisfaction Excellence Award — eNoah, 2020"
+  - "📄 Published Research — Optical Character Recognition using Ant Miner Algorithm (IJCA, New York)"
+  - "🥇 1st Prize — State-level IT Olympiad, Odisha, 2011"
+
+# Contact Section
+contact:
+  subtitle: "Open to consulting, architecture advisory, and leadership opportunities."
+  links:
+    - id: "email-link"
+      url: "mailto:kamal.nirajb@gmail.com"
+      icon: "✉️"
+      text: "kamal.nirajb@gmail.com"
+      target: ""
+    - id: "phone-link"
+      url: "tel:+917004282937"
+      icon: "📞"
+      text: "+91 70042 82937"
+      target: ""
+    - id: ""
+      url: "https://www.linkedin.com/in/kamalnirajb/"
+      icon: "💼"
+      text: "LinkedIn"
+      target: "_blank"
+    - id: ""
+      url: "https://github.com/kamalnirajb"
+      icon: "💻"
+      text: "GitHub"
+      target: "_blank"
+  location:
+    id: "location-card"
+    icon: "📍"
+    text: "Patna, Bihar, India"

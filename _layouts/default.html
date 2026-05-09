@@ -8,21 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#hero"><img src="logo.png" alt="{{ site.author }}" class="nav-logo-img" /></a>
+      <a href="#hero"><img src="{{ '/logo.png' | relative_url }}" alt="{{ site.author }}" class="nav-logo-img" /></a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        {% for item in site.data.content.nav %}
+        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+        {% endfor %}
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -37,6 +34,6 @@
     <p>© 2025 {{ site.author }} · Built with ❤️ for GitHub Pages</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="{{ '/main.js' | relative_url }}"></script>
 </body>
 </html>

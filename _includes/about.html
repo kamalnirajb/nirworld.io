@@ -4,27 +4,17 @@
       <h2 class="section-title">About <span class="accent">Me</span></h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>Mobile Architect with <strong>14+ years</strong> of experience designing and shipping production-grade applications across iOS, Android, and cross-platform stacks — now leading the next generation of <strong>AI-enabled mobile experiences</strong>.</p>
-          <p>Proven ability to translate ambiguous business needs into scalable technical architectures that blend native mobile excellence (<em>Swift, SwiftUI, ARKit, RealityKit</em>) with modern AI capabilities (<em>LLMs, RAG, Agentic AI, MCP, on-device ML</em>).</p>
-          <p>PMP® certified managing consultant who pairs engineering depth with client-facing discipline — trusted to architect, lead, and deliver across enterprise, government, and innovation programs.</p>
+          {% for p in site.data.content.about.paragraphs %}
+          <p>{{ p }}</p>
+          {% endfor %}
         </div>
         <div class="about-stats">
-          <div class="stat-card" id="stat-years">
-            <span class="stat-num" data-target="14">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Years Experience</span>
+          {% for stat in site.data.content.about.stats %}
+          <div class="stat-card" id="{{ stat.id }}">
+            <span class="stat-num" data-target="{{ stat.target }}">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">{{ stat.label }}</span>
           </div>
-          <div class="stat-card" id="stat-apps">
-            <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Apps Shipped</span>
-          </div>
-          <div class="stat-card" id="stat-clients">
-            <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Gov & Enterprise Clients</span>
-          </div>
-          <div class="stat-card" id="stat-certs">
-            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Certifications</span>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
