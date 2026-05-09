@@ -15,21 +15,15 @@ nav:
 
 # Hero Section
 hero:
-  badge: "PMP® · Mobile Apps Architect · 14+ Years"
+  badge: "PMP® · Mobile Apps Architect · AI Architect · 14+ Years"
   name_first: "Niraj"
   name_last: "Kumar"
   typed_titles:
-    - "Mobile Apps Architect"
-    - "AI Solutions Leader"
-    - "iOS & Augmented Reality Expert"
-    - "PMP® Certified Consultant"
-    - "Spatial Computing Pioneer"
-    - "Android Architect"
-    - "Cross-Platform Solutions Architect"
-    - "React Native Developer"
-    - "Ionic Developer"
-    - "Technical Consultant"
-    - "Freelance Developer"
+    - "Principal Mobile Architect"
+    - "AI & Spatial Computing Leader"
+    - "iOS & Android Solutions Expert"
+    - "Cross-Platform Engineering Head"
+    - "PMP® Certified Technical Consultant"
   location: "📍 Patna, Bihar, India"
   cta_primary: "Get In Touch"
   cta_secondary: "View Portfolio"
@@ -39,9 +33,9 @@ about:
   title_plain: "About"
   title_accent: "Me"
   paragraphs:
-    - "Mobile Architect with <strong>14+ years</strong> of experience designing and shipping production-grade applications across iOS, Android, and cross-platform stacks — now leading the next generation of <strong>AI-enabled mobile experiences</strong>."
-    - "Proven ability to translate ambiguous business needs into scalable technical architectures that blend native mobile excellence (<em>Swift, SwiftUI, ARKit, RealityKit</em>) with modern AI capabilities (<em>LLMs, RAG, Agentic AI, MCP, on-device ML</em>)."
-    - "PMP® certified managing consultant who pairs engineering depth with client-facing discipline — trusted to architect, lead, and deliver across enterprise, government, and innovation programs."
+    - "PMP® certified Managing Consultant who pairs deep engineering expertise with client-facing discipline. Trusted by executive stakeholders to architect, lead, and deliver mission-critical enterprise, government, and innovation programs."
+    - "Results-driven Mobile Architect and AI Solutions Leader with <strong>14+ years</strong> of experience designing, architecting, and shipping high-performance applications across iOS, Android, and cross-platform stacks. Currently pioneering the next generation of <strong>AI-enabled mobile experiences</strong>."
+    - "Expert in bridging the gap between ambiguous business requirements and robust technical implementations. Consistently delivers scalable architectures that blend native mobile excellence (<em>Swift, SwiftUI, ARKit, RealityKit</em>) with cutting-edge AI capabilities (<em>LLMs, RAG, Agentic AI, MCP, on-device ML</em>)."
   stats:
     - id: "stat-years"
       target: 14
@@ -66,50 +60,45 @@ skills:
     icon: "🤖"
     tag_class: "tag-ai"
     items:
-      - "LLMs"
-      - "Agentic AI"
+      - "Large Language Models (LLMs)"
+      - "Autonomous AI Agents"
       - "RAG Pipelines"
-      - "MCP"
-      - "Vertex AI"
-      - "Google ML Kit"
-      - "OpenCV"
-      - "N8N Automation"
-      - "Prompt Engineering"
-  - title: "Mobile Architecture"
+      - "Model Context Protocol (MCP)"
+      - "Google Vertex AI"
+      - "On-Device ML (Google ML Kit)"
+      - "Computer Vision (OpenCV)"
+      - "Workflow Automation (n8n)"
+  - title: "Mobile Engineering & Architecture"
     icon: "📱"
     tag_class: "tag-mobile"
     items:
-      - "Swift / SwiftUI"
-      - "ARKit / RealityKit"
-      - "Android (Java)"
-      - "iOS SDK"
-      - "Cross-Platform Architecture"
-      - "React Native"
-      - "Ionic / Cordova"
-      - "MVVM / Clean Arch"
-      - "Offline-first"
-  - title: "Backend & DevOps"
+      - "Native iOS (Swift / SwiftUI)"
+      - "Spatial Computing (ARKit / RealityKit)"
+      - "Native Android (Java / SDK)"
+      - "React Native & Ionic Frameworks"
+      - "MVVM & Clean Architecture"
+      - "Offline-First Data Sync"
+      - "Cross-Platform Solutions"
+  - title: "Backend, Cloud & DevOps"
     icon: "⚙️"
     tag_class: "tag-backend"
     items:
-      - "REST API Design"
-      - "Firebase"
-      - "Socket.io"
-      - "XMPP / Openfire"
-      - "Git / Jenkins"
-      - "Fastlane"
-      - "CI/CD Pipelines"
-      - "Python"
-  - title: "Leadership & Delivery"
+      - "RESTful API Architecture"
+      - "Firebase & Realtime DB"
+      - "WebSockets (Socket.io / XMPP)"
+      - "CI/CD Pipelines (Jenkins / Fastlane)"
+      - "Version Control (Git)"
+      - "Python Scripting"
+  - title: "Technical Leadership & Delivery"
     icon: "🏆"
     tag_class: "tag-lead"
     items:
-      - "PMP®"
-      - "Agile Delivery"
-      - "Architecture Reviews"
-      - "Client Engagement"
-      - "Team Mentoring"
-      - "Technical Docs"
+      - "PMP® Certified Management"
+      - "Agile & Scrum Methodologies"
+      - "System Architecture Reviews"
+      - "Executive Client Engagement"
+      - "Cross-Functional Mentoring"
+      - "Technical Documentation"
 
 # Experience Section
 experience_section:
@@ -121,42 +110,42 @@ experience:
     company: "eNoah iSolutions India Pvt. Ltd. · Chennai, India"
     date: "Sep 2023 – Present"
     details:
-      - "Architect AI-enabled mobile solutions end-to-end from client discovery through production rollout."
-      - "Led architecture of <strong>Conja</strong> — flagship spatial-learning iOS product fusing ARKit/RealityKit with Google ML Kit and Vertex AI."
-      - "Designed REST APIs powering iOS clients with low-latency, secure auth, and clean contract-first design."
-      - "Authored trade-off analyses and business-facing proposals shortening decision cycles for senior stakeholders."
+      - "Spearhead the end-to-end architecture and delivery of AI-enabled mobile solutions, driving innovation from client discovery to production rollout."
+      - "Lead architect for <strong>Conja</strong>, a flagship spatial-learning iOS platform that seamlessly integrates ARKit/RealityKit with Google ML Kit and Vertex AI for an immersive user experience."
+      - "Design highly scalable REST APIs, ensuring low-latency communication, secure authentication, and robust contract-first design principles."
+      - "Partner with executive stakeholders to author comprehensive trade-off analyses and technical proposals, significantly accelerating strategic decision cycles."
   - title: "Technology Lead — iOS & Emerging Tech"
     company: "eNoah iSolutions India Pvt. Ltd. · Chennai, India"
     date: "Sep 2022 – Aug 2023"
     details:
-      - "Technical leadership across iOS, Android, and cross-platform engagements."
-      - "Delivered AR- and AI-enabled features ahead of market, establishing early credibility on Apple's ARKit stack."
-      - "Formalised coding conventions and review gates improving release predictability."
-      - "Mentored engineers on iOS best practices, testability, and clean architecture."
+      - "Provided strategic technical leadership across iOS, Android, and cross-platform development initiatives."
+      - "Pioneered the integration of AR and AI-enabled features ahead of market trends, establishing early organizational credibility with Apple's ARKit stack."
+      - "Established rigorous coding conventions, CI/CD pipelines, and review gates, drastically improving code quality and release predictability."
+      - "Mentored cross-functional engineering teams on iOS best practices, unit testing, and Clean Architecture principles."
   - title: "Senior Software Engineer"
     company: "eNoah iSolutions India Pvt. Ltd. · Chennai, India"
     date: "Jan 2018 – Aug 2022"
     details:
-      - "Owned iOS solution design from requirements through production release on App Store and enterprise channels."
-      - "Resolved complex performance and memory issues, raising stability and App Store ratings."
+      - "Owned complete iOS solution lifecycles, driving projects from initial requirements gathering to successful App Store and enterprise deployments."
+      - "Diagnosed and resolved critical performance bottlenecks and memory leaks, significantly boosting app stability and elevating App Store ratings."
       - "🏆 <strong>Customer Satisfaction Excellence Award</strong> — July 2020."
   - title: "Senior Software Engineer"
     company: "Talaria Consulting International · Ras Al Khaimah, UAE"
     date: "Apr 2017 – Dec 2017"
     details:
-      - "Delivered iOS solutions for regional clients; led requirements discussions, technical design, and production support."
+      - "Engineered bespoke iOS solutions for high-profile regional clients, spearheading requirements gathering, technical design, and ongoing production support."
   - title: "Software Engineer — iOS & Android"
     company: "Technical Arts Concepts M.E. (TACME) LLC · Dubai, UAE"
     date: "Mar 2015 – Feb 2017"
     details:
-      - "Built 10+ iOS and Android apps for UAE government and enterprise: Ajman Municipality, DMCA, ADNOC, Ministry of Finance UAE, Khorfakkan Municipality."
-      - "Set up Xcode/Android Studio environments, feature pipelines, and release processes from scratch."
+      - "Architected and delivered 10+ mission-critical iOS and Android applications for UAE government entities and enterprise clients (e.g., ADNOC, Ministry of Finance UAE)."
+      - "Pioneered the organization's mobile infrastructure by establishing Xcode/Android Studio environments, feature development pipelines, and automated release processes."
   - title: "Earlier Career — Software Engineer"
     company: "IndiaNIC Infotech · Acumen Consultancy · India"
     date: "Jul 2012 – Jan 2015"
     details:
-      - "Transitioned from web (PHP/CodeIgniter) into mobile via Appcelerator Titanium, then native iOS and Android."
-      - "Published <strong>Animated TableView module</strong> on the Appcelerator Marketplace."
+      - "Transitioned from web (PHP/CodeIgniter) into mobile development, rapidly mastering Appcelerator Titanium, native iOS, and Android platforms."
+      - "Authored and published the <strong>Animated TableView module</strong> on the Appcelerator Marketplace."
 
 # Portfolio Section
 portfolio_section:
@@ -164,36 +153,36 @@ portfolio_section:
   title_accent: "Portfolio"
 
 portfolio:
-  - title: "Conja — AI + AR Spatial Learning"
+  - title: "Conja — AI & AR Spatial Learning Platform"
     client: "eNoah iSolutions"
     icon: "🧠"
     featured: true
-    description: "Immersive spatial-learning iOS platform combining ARKit/RealityKit, Google ML Kit on-device vision (pose, face, object detection), Vertex AI, Firebase, and real-time media via HaishinKit."
-    tags: ["ARKit", "RealityKit", "ML Kit", "Vertex AI", "SwiftUI"]
-  - title: "Moodle & Totara LMS Apps"
-    client: "eNoah iSolutions | Mobile Learning"
+    description: "Architected a flagship spatial-learning iOS application. Seamlessly integrated Apple ARKit/RealityKit for 3D environments, Google ML Kit for on-device computer vision (pose/face/object tracking), and Vertex AI for intelligent responses, all backed by a real-time Firebase architecture."
+    tags: ["ARKit", "RealityKit", "Google ML Kit", "Vertex AI", "SwiftUI"]
+  - title: "Enterprise Mobile LMS (Moodle/Totara)"
+    client: "eNoah iSolutions | Mobile Learning Practice"
     icon: "📚"
     featured: false
-    description: "Multi-tenant mobile LMS on Ionic + Apache Cordova with offline WebView, multi-provider SCORM content, push notifications, AR features — later migrated to React Native."
-    tags: ["Ionic", "Cordova", "React Native", "SCORM", "Android", "iOS"]
-  - title: "ADPSecure Chat"
+    description: "Engineered a scalable, multi-tenant Learning Management System application deployed on Ionic/Cordova and later migrated to React Native. Features include robust offline WebViews, multi-provider SCORM compliance, AR-based learning modules, and reliable push notifications."
+    tags: ["Ionic", "React Native", "SCORM", "Offline-First", "iOS", "Android"]
+  - title: "ADPSecure — Encrypted Government Chat"
     client: "Abu Dhabi Police · e-Government"
     icon: "🔒"
     featured: false
-    description: "Secure XMPP-based real-time chat platform with high-grade encryption, screenshot detection, auto-deletion, and time-bound message delivery distributed via enterprise ad-hoc."
-    tags: ["XMPP", "Openfire", "iOS", "Encryption", "Enterprise"]
-  - title: "UAE Government Apps"
+    description: "Delivered a mission-critical, XMPP-based secure communication platform for law enforcement. Engineered high-grade end-to-end encryption, screenshot detection, self-destructing messages, and time-bound delivery tailored for strict enterprise distribution."
+    tags: ["XMPP", "Openfire", "iOS Security", "End-to-End Encryption"]
+  - title: "UAE Smart Government Applications"
     client: "TACME LLC, Dubai"
     icon: "🏛️"
     featured: false
-    description: "Bilingual, map-driven, and service-delivery apps for ADNOC Distribution, Dubai Parks & Beaches (with AR), Ajman Municipality, DMCA, Ministry of Finance UAE."
-    tags: ["iOS", "Android", "AR", "Bilingual", "Maps"]
-  - title: "Consumer & Developer Tools"
-    client: "Various Clients"
+    description: "Architected and delivered a suite of high-profile, bilingual (Arabic/English) applications for major government entities, including ADNOC Distribution, Ajman Municipality, and the UAE Ministry of Finance. Solutions heavily featured advanced mapping, AR, and complex service delivery integrations."
+    tags: ["iOS", "Android", "AR", "GIS/Maps", "Bilingual UX"]
+  - title: "Developer SDKs & Consumer Utilities"
+    client: "Various Enterprise Clients"
     icon: "💬"
     featured: false
-    description: "Customer Engage (Socket.io live-support SDK), Novus dealer-finder, App 301 community, Walk-ins appointments, Prep Words, WirelessQpons (GPS discounts), and the Animated TableView Titanium module."
-    tags: ["Socket.io", "GPS", "SDK", "Titanium"]
+    description: "Developed versatile products ranging from the 'Customer Engage' live-support SDK (Socket.io) to location-based discount platforms (WirelessQpons) and the widely-used 'Animated TableView' Titanium module, demonstrating full-stack versatility and deep framework knowledge."
+    tags: ["Socket.io SDK", "Location Services", "Titanium Modules"]
 
 # Education Section
 education_section:
