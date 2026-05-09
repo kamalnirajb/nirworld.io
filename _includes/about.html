@@ -11,7 +11,9 @@
         <div class="about-stats">
           {% for stat in site.data.content.about.stats %}
           <div class="stat-card" id="{{ stat.id }}">
-            <span class="stat-num" data-target="{{ stat.target }}">0</span><span class="stat-plus">+</span>
+            <div class="stat-value">
+              <span class="stat-num" data-target="{{ stat.target }}">0</span><span class="stat-plus">+</span>
+            </div>
             <span class="stat-label">{{ stat.label }}</span>
           </div>
           {% endfor %}
