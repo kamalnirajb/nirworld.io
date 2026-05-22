@@ -47,7 +47,7 @@ about:
       target: 8
       label: "Gov & Enterprise Clients"
     - id: "stat-certs"
-      target: 5
+      target: 10
       label: "Certifications"
 
 # Skills Section
@@ -210,21 +210,36 @@ education:
     year: "May 2009"
 
 certifications:
-  - title: "Project Management Professional (PMP®)"
-    institution: "Project Management Institute, USA · Feb 2020 – Feb 2026"
-    dot_class: "pmp"
+  - title: "AI Systems Design: RAG Pipelines and LLM Architecture"
+    institution: "Board Infinity · May 2026"
+    dot_class: "ai"
+  - title: "AI Tools Workshop"
+    institution: "Be10x · May 2026"
+    dot_class: "ai"
+  - title: "Architect AI Systems: From Concept to Code"
+    institution: "Coursera · Apr 2026"
+    dot_class: "ai"
+  - title: "Uncover Your Transferable Skills with AI"
+    institution: "Google · Apr 2026"
+    dot_class: "ai"
   - title: "AI Agents Fundamentals"
     institution: "Hugging Face · Jul 2025"
     dot_class: "ai"
   - title: "PTE Academic (Score 58)"
     institution: "Pearson Vue · 2024 – 2026"
     dot_class: "pte"
-  - title: "AR and the Web"
-    institution: "CurtinX / Curtin University · Mar 2023"
-    dot_class: "ar"
+  - title: "Generative AI Overview for Project Managers"
+    institution: "Project Management Institute · Jan 2024"
+    dot_class: "ai"
   - title: "French Level A1"
     institution: "Indian Institute of Tourism & Travel Management · Nov 2023"
     dot_class: "fr"
+  - title: "AR and the Web"
+    institution: "CurtinX / Curtin University · Mar 2023"
+    dot_class: "ar"
+  - title: "Project Management Professional (PMP®)"
+    institution: "Project Management Institute, USA · Feb 2020 – Feb 2029"
+    dot_class: "pmp"
 
 awards:
   - "🥇 Gold Medal — Best academic performance MCA"
@@ -257,6 +272,11 @@ contact:
       url: "https://github.com/kamalnirajb"
       icon: "💻"
       text: "GitHub"
+      target: "_blank"
+    - id: "blog-link"
+      url: "https://nirworld.blogspot.com/"
+      icon: "✍️"
+      text: "Blog"
       target: "_blank"
   location:
     id: "location-card"

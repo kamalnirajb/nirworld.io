@@ -5,6 +5,7 @@ baseurl: ""
 author: Niraj Kumar
 linkedin: https://www.linkedin.com/in/kamalnirajb/
 github: https://github.com/kamalnirajb
+blog: https://nirworld.blogspot.com/
 
 # Build settings
 markdown: kramdown
