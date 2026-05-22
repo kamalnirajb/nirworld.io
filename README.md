@@ -28,7 +28,7 @@ I specialize in leading high-impact engineering programs, bridging the gap betwe
         <p style="margin: 5px 0 0 0; font-size: 13px; color: #586069;">Years Experience</p>
       </td>
       <td align="center" style="padding: 20px; border: 1px solid #e1e4e8; border-radius: 8px;">
-        <h3 style="margin: 0; color: #7c5cfc;">10+</h3>
+        <h3 style="margin: 0; color: #7c5cfc;">20+</h3>
         <p style="margin: 5px 0 0 0; font-size: 13px; color: #586069;">Apps Shipped</p>
       </td>
       <td align="center" style="padding: 20px; border: 1px solid #e1e4e8; border-radius: 8px;">
