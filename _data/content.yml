@@ -41,7 +41,7 @@ about:
       target: 14
       label: "Years Experience"
     - id: "stat-apps"
-      target: 10
+      target: 20
       label: "Apps Shipped"
     - id: "stat-clients"
       target: 8
