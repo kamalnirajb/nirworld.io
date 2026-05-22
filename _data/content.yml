@@ -210,20 +210,27 @@ education:
     year: "May 2009"
 
 certifications:
+  - title: "Project Management Professional (PMP®)"
+    institution: "Project Management Institute, USA · Feb 2020 – Feb 2029"
+    dot_class: "pmp"
+    featured: true
   - title: "AI Systems Design: RAG Pipelines and LLM Architecture"
     institution: "Board Infinity · May 2026"
     dot_class: "ai"
-  - title: "AI Tools Workshop"
-    institution: "Be10x · May 2026"
-    dot_class: "ai"
+    featured: true
   - title: "Architect AI Systems: From Concept to Code"
     institution: "Coursera · Apr 2026"
     dot_class: "ai"
-  - title: "Uncover Your Transferable Skills with AI"
-    institution: "Google · Apr 2026"
-    dot_class: "ai"
+    featured: true
   - title: "AI Agents Fundamentals"
     institution: "Hugging Face · Jul 2025"
+    dot_class: "ai"
+    featured: true
+  - title: "AI Tools Workshop"
+    institution: "Be10x · May 2026"
+    dot_class: "ai"
+  - title: "Uncover Your Transferable Skills with AI"
+    institution: "Google · Apr 2026"
     dot_class: "ai"
   - title: "PTE Academic (Score 58)"
     institution: "Pearson Vue · 2024 – 2026"
@@ -237,9 +244,6 @@ certifications:
   - title: "AR and the Web"
     institution: "CurtinX / Curtin University · Mar 2023"
     dot_class: "ar"
-  - title: "Project Management Professional (PMP®)"
-    institution: "Project Management Institute, USA · Feb 2020 – Feb 2029"
-    dot_class: "pmp"
 
 awards:
   - "🥇 Gold Medal — Best academic performance MCA"
