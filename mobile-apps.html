@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile Apps Development — Niraj Kumar</title>
-  <meta name="description" content="Mobile Apps Development — Native iOS, Android, React Native, Ionic, Titanium. 14+ years shipping enterprise-grade mobile applications." />
+  <title>{{ site.data.content.mobile_apps.hero.title | escape }} — Niraj Kumar</title>
+  <meta name="description" content="Mobile Apps Development — iOS, Android, React Native, Ionic, Titanium. {{ site.data.content.experience[0].company }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="sector.css" />
+  <link rel="stylesheet" href="sector-styles.css" />
 </head>
 <body>
 
@@ -20,7 +20,7 @@
       <ul class="nav-links">
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#portfolio">Portfolio</a></li>
-        <li><a href="mobile-apps.html" class="active">Mobile Apps</a></li>
+        <li><a href="mobile-apps.html">Mobile Apps</a></li>
         <li><a href="ai-cv.html">AI & Computer Vision</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -31,14 +31,123 @@
   </nav>
 
   <!-- SECTOR HERO -->
-  {{ site.includes['sector-mobile-apps.html'] }}
+  <section class="mr-sector-hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="mr-sector-hero-content">
+      <div class="mr-sector-icon-wrap">
+        <div class="mr-sector-icon">{{ site.data.content.mobile_apps.hero.icon }}</div>
+      </div>
+      <p class="mr-sector-tagline-line">{{ site.data.content.mobile_apps.hero.label }}</p>
+      <h1 class="mr-sector-hero-title">{{ site.data.content.mobile_apps.hero.title }}</h1>
+      <p class="mr-sector-hero-sub">{{ site.data.content.mobile_apps.hero.subtitle }}</p>
+      <a href="{{ site.data.content.mobile_apps.hero.cta_link }}" class="btn bgc-ghost">{{ site.data.content.mobile_apps.hero.cta_text }}</a>
+    </div>
+    <div class="mr-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- KEY STATS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="mr-sector-stats">
+        {% for stat in site.data.content.mobile_apps.stats %}
+        <div class="mr-sector-stat-card">
+          <span class="mr-sector-stat-num">{{ stat.value }}</span>
+          <span class="mr-sector-stat-label">{{ stat.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">{{ site.data.content.mobile_apps.sections_title }}</h2>
+      <div class="mr-sector-tech-grid">
+        {% for cat in site.data.content.mobile_apps.tech_categories %}
+        <div class="mr-sector-tech-card">
+          <div class="mr-sector-tech-header">
+            <span class="mr-sector-tech-icon">{{ cat.icon }}</span>
+            <h3>{{ cat.name }}</h3>
+          </div>
+          <div class="mr-sector-tech-tags">
+            {% for tag in cat.tags %}
+            <span class="mr-sector-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CASE STUDIES -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">{{ site.data.content.mobile_apps.caseStudies_title }}</h2>
+      <div class="mr-caseStudies-grid">
+        {% for cs in site.data.content.mobile_apps.caseStudies %}
+        <div class="mr-caseStudy-card{% if cs.featured %} featured{% endif %}">
+          {% if cs.featured %}<div class="mr-caseStudy-badge">Featured</div>{% endif %}
+          <div class="mr-caseStudy-top">
+            <span class="mr-caseStudy-icon">{{ cs.icon }}</span>
+            <h3>{{ cs.title }}</h3>
+          </div>
+          <p class="mr-caseStudy-desc">{{ cs.desc }}</p>
+          <div class="mr-caseStudy-tags">
+            {% for tag in cs.tags %}
+            <span class="mr-sector-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% if cs.link_url %}
+          <a href="{{ cs.link_url }}" target="_blank" rel="noopener noreferrer" class="mr-caseStudy-link">{{ cs.link_text }}</a>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT PRACTICES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">{{ site.data.content.mobile_apps.practices_title }}</h2>
+      <div class="mr-sector-practices-grid">
+        {% for p in site.data.content.mobile_apps.practices %}
+        <div class="mr-sector-practice-card">
+          <div class="mr-sector-practice-icon-wrap">{{ p.icon }}</div>
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.desc }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="section section-dark">
+    <div class="container contact-container">
+      <h2 class="section-title">{{ site.data.content.mobile_apps.contact_title }}</h2>
+      <p class="contact-sub">{{ site.data.content.mobile_apps.contact_subtitle }}</p>
+      <div class="contact-cards">
+        {% for link in site.data.content.contact.links %}
+        <a href="{{ link.url }}" class="contact-card" {% if link.target != "" %}target="{{ link.target }}" rel="noopener noreferrer"{% endif %}>
+          <span class="contact-icon">{{ link.icon }}</span>
+          <span>{{ link.text }}</span>
+        </a>
+        {% endfor %}
+      </div>
+      <p class="contact-location">📍 {{ site.data.content.contact.location.text }}</p>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Niraj Kumar &middot; Back to <a href="index.html">Portfolio</a></p>
+    <p>&copy; 2026 Niraj Kumar · Back to <a href="index.html">Portfolio</a></p>
   </footer>
 
-  <!-- Shared JS from main site -->
   <script src="main.js"></script>
 </body>
 </html>
