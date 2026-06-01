@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Apps Development — Niraj Kumar</title>
+  <meta name="description" content="Mobile Apps Development — Native iOS, Android, React Native, Ionic, Titanium. 14+ years shipping enterprise-grade mobile applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sector.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html"><img src="logo.png" alt="NirWorld" class="nav-logo-img" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="mobile-apps.html" class="active">Mobile Apps</a></li>
+        <li><a href="ai-cv.html">AI & Computer Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SECTOR HERO -->
+  {{ site.includes['sector-mobile-apps.html'] }}
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Niraj Kumar &middot; Back to <a href="index.html">Portfolio</a></p>
+  </footer>
+
+  <!-- Shared JS from main site -->
+  <script src="main.js"></script>
+</body>
+</html>

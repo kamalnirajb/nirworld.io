@@ -222,6 +222,10 @@ certifications:
     institution: "Coursera · Apr 2026"
     dot_class: "ai"
     featured: true
+  - title: "MLOps and LLMOps: Deploying and Scaling AI in Production"
+    institution: "Board Infinity · May 2026"
+    dot_class: "ai"
+    featured: true
   - title: "AI Agents Fundamentals"
     institution: "Hugging Face · Jul 2025"
     dot_class: "ai"
@@ -291,3 +295,188 @@ contact:
 footer:
   year: "2025"
   text: "Built with ❤️ for GitHub Pages"
+
+# ========== SECTOR: MOBILE APPS DEVELOPMENT ==========
+mobile_apps:
+  hero:
+    icon: "📱"
+    label: "Expertise"
+    title: "Mobile Apps <span class='accent'>Development</span>"
+    subtitle: "iOS · Android · React Native · Ionic · Titanium"
+    cta_link: "index.html"
+    cta_text: "&larr; Back to Portfolio"
+  stats:
+    - value: "14+" label: "Years"
+    - value: "20+" label: "Apps Shipped"
+    - value: "8+" label: "Gov. Clients"
+    - value: "5" label: "Frameworks"
+  sections_title: "Technologies & <span class='accent'>Frameworks</span>"
+  tech_categories:
+    - name: "iOS Native"
+      icon: "⚡"
+      tags: ["Swift","SwiftUI","UIKit","ARKit","RealityKit","Core ML","Swift Package Manager","Combine","Xcode"]
+    - name: "Android Native"
+      icon: "🤖"
+      tags: ["Java","Kotlin","Android SDK","Jetpack Compose","Room","Firebase","Android Studio"]
+    - name: "React Native"
+      icon: "⚛️"
+      tags: ["React Native 0.85","React 19","TypeScript","Native Stack","AsyncStorage","Image Picker"]
+    - name: "Ionic Framework"
+      icon: "🌐"
+      tags: ["Ionic / Cordova","Angular","Web Views","SCORM","Multi-Tenant","Plugin Ecosystem"]
+    - name: "Appcelerator Titanium"
+      icon: "🔧"
+      tags: ["Titanium CLI","Appcelerator Studio","Appcelerator Marketplace","Titanium Modules","Animated TableView"]
+    - name: "DevOps & Backend"
+      icon: "☁️"
+      tags: ["Fastlane","Jenkins","CI/CD","Firebase","REST APIs","Socket.io","XMPP"]
+  caseStudies_title: "Featured <span class='accent'>Case Studies</span>"
+  caseStudies:
+    - title: "Conja — AI & AR Spatial Learning Platform"
+      icon: "🧠"
+      featured: true
+      desc: "Flagship iOS platform integrating ARKit/RealityKit for immersive 3D learning. On-device computer vision via Google ML Kit (pose tracking, face detection, object recognition) with dynamic Vertex AI responses backed by real-time Firestore. Clean Architecture and MVVM patterns. Custom data model with offline-first sync."
+      tags: ["iOS","Swift","SwiftUI","ARKit","RealityKit","Google ML Kit","Vertex AI","Firestore"]
+      link_url: "https://github.com/kamalnirajb/RNTDDNirApp"
+      link_text: "View Related React Native Work &rarr;"
+    - title: "Enterprise Mobile LMS (Moodle/Totara)"
+      icon: "📚"
+      featured: false
+      desc: "Multi-tenant Learning Management System on Ionic/Cordova, later migrated to React Native. Offline WebViews with intelligent content prefetching, SCORM 1.2/2004 compliance, AR-based learning modules, and bi-directional push notification channels."
+      tags: ["Ionic","React Native","SCORM","Offline-First","Multi-Tenant"]
+    - title: "ADPSecure — Encrypted Government Chat"
+      icon: "🔒"
+      featured: false
+      desc: "Mission-critical XMPP secure messaging platform for Abu Dhabi Police. End-to-end encryption, screenshot detection, self-destructing messages, time-bound delivery, and enterprise MDM integration. Strict compliance with UAE data sovereignty requirements."
+      tags: ["iOS","XMPP","Openfire","AES Encryption","MDM"]
+    - title: "UAE Smart Government Applications"
+      icon: "🏛️"
+      featured: false
+      desc: "Portfolio of high-profile apps for ADNOC Distribution, Ajman Municipality, UAE Ministry of Finance. Bilingual (Arabic/English) with RTL layout, advanced MapKit integration, AR wayfinding, and enterprise SSO authentication. Delivered via Apple Business Manager and Samsung Knox."
+      tags: ["iOS","Android","MapKit","RTL","Enterprise SSO"]
+    - title: "Animated TableView Titanium Module"
+      icon: "🔄"
+      featured: false
+      desc: "Custom Appcelerator Titanium native module enabling hardware-accelerated table view animations. Published on the Appcelerator Marketplace. Bridged Objective-C/Java native APIs with Titanium JavaScript API, adopted by 500+ developers."
+      tags: ["Titanium","Native Module","Appcelerator Studio","Marketplace"]
+  practices_title: "Engineering <span class='accent'>Practices</span>"
+  practices:
+    - icon: "🏗️"
+      title: "Clean Architecture & MVVM"
+      desc: "Contract-first API design, dependency inversion through Swift protocols and Kotlin interfaces, testable domain layers with no platform coupling."
+    - icon: "🚀"
+      title: "CI/CD Pipelines"
+      desc: "Automated build and distribution via Fastlane, Jenkins pipelines for code quality gates, code review workflows, and staged rollout (TestFlight / Play Console)."
+    - icon: "🧪"
+      title: "Test-First Engineering"
+      desc: "Unit, integration, and UI testing across all stacks. Jest + MSW for React Native, XCTest for Swift, Espresso for Android. Coverage-driven development for critical paths."
+    - icon: "📦"
+      title: "Performance & Memory"
+      desc: "Profile-driven optimization: Instruments / Memory Profiler for native hunts, Flipper / React DevTools for JS bridge latency. Sub-50ms animation targets, < 50MB memory budgets."
+  contact_title: "Let's Build <span class='accent'>Together</span>"
+  contact_subtitle: "Whether you need a native iOS app, a cross-platform solution on React Native, or enterprise mobile consulting — I can architect and deliver at scale."
+
+# ========== SECTOR: AI & COMPUTER VISION ==========
+ai_cv:
+  hero:
+    icon: "🧠"
+    label: "Expertise"
+    title: "AI & <span class='accent'>Computer Vision</span>"
+    subtitle: "LLMs · RAG Pipelines · Autonomous Agents · On-Device ML · Vertex AI"
+    cta_link: "index.html"
+    cta_text: "&larr; Back to Portfolio"
+  stats:
+    - value: "2023" label: "AI Focus"
+    - value: "5+" label: "AI Certs"
+    - value: "3" label: "RAG Pipelines"
+    - value: "2" label: "AR-ML Integrations"
+  sections_title: "AI <span class='accent'>Capabilities</span>"
+  capabilities:
+    - name: "Large Language Models"
+      icon: "🤖"
+      tags: ["Vertex AI","Gemini","GPT-series","Prompt Engineering","Semantic Search","Function Calling","RAG"]
+    - name: "Computer Vision"
+      icon: "🔍"
+      tags: ["Google ML Kit","On-Device ML","Pose Tracking","Face Detection","Object Detection","Text Recognition"]
+    - name: "RAG Pipelines"
+      icon: "🔗"
+      tags: ["Vector Databases","Embeddings","Document Chunking","Semantic Retrieval","Context Windows","Hallucination Guardrails"]
+    - name: "MLOps & LLMOps"
+      icon: "🔧"
+      tags: ["Model Deployment","Model Monitoring","Scaling","CI/CD for ML","Drift Detection","A/B Testing"]
+    - name: "AI Agents"
+      icon: "🗣️"
+      tags: ["Autonomous Agents","Multi-Agent Systems","Task Orchestration","Tool Use","Memory Systems","ReAct Pattern"]
+    - name: "On-Device AI (Mobile)"
+      icon: "📱"
+      tags: ["Core ML","TensorFlow Lite","ML Kit Mobile","Privacy-First","Inference Optimization","Low-Latency"]
+  useCases_title: "AI-Driven <span class='accent'>Use Cases</span>"
+  useCases:
+    - title: "Conja — AI & AR Spatial Learning Platform"
+      icon: "🧠"
+      featured: true
+      desc: "Flagship app fusing computer vision with generative AI. On-device Google ML Kit performs real-time pose detection, facial landmark tracking, and object recognition — feeding contextual data to Vertex AI for dynamic, personalized learning. Built with Clean Architecture and deep offline-first support."
+      tags: ["Google ML Kit","Vertex AI","Gemini","ARKit","Clean Architecture","Real-Time ML"]
+    - title: "AI Architect — AI Systems Design: RAG Pipelines"
+      icon: "🎓"
+      featured: false
+      desc: "Certified in designing production-grade Retrieval-Augmented Generation architectures. Covers vector DB integration (Pinecone / Weaviate / Chroma), chunking strategies, embedding models, query rewriting, and guardrails for enterprise knowledge bases."
+      tags: ["RAG Architecture","Vector DBs","Embeddings","Knowledge Retrieval","Hallucination Mitigation"]
+    - title: "Architecture — Architect AI Systems: From Concept to Code"
+      icon: "🏗️"
+      featured: false
+      desc: "End-to-end AI system design: requirements -> model selection -> integration -> monitoring. Covers LLM orchestration frameworks, agentic workflows, and deployment architectures for production mobile applications."
+      tags: ["System Design","Orchestration","Agentic Workflows","Production Deploy"]
+    - title: "AI Agents Fundamentals — Hugging Face"
+      icon: "🤖"
+      featured: false
+      desc: "Deep dive into autonomous AI agent design using Hugging Face Transformers and LlamaIndex. Covers multi-step reasoning, tool use patterns, memory management, and evaluation frameworks for reliable agent systems."
+      tags: ["Hugging Face","Transformers","LlamaIndex","Tool Use","Agent Evaluation"]
+    - title: "MLOps and LLMOps: Deploying and Scaling AI in Production"
+      icon: "📊"
+      featured: false
+      desc: "End-to-end MLOps/LLMOps lifecycle: dataset versioning, model training pipelines, A/B testing, latency optimization, and monitoring for drift in real-world mobile environments. Includes CI/CD for ML models and GPU/CPU inference tuning."
+      tags: ["MLOps","LLMOps","CI/CD for ML","Drift Detection","Inference Tuning"]
+    - title: "Generative AI Overview for Project Managers — PMI"
+      icon: "📖"
+      featured: false
+      desc: "Strategic overview of generative AI for enterprise project managers. Covers AI literacy, use-case prioritization, risk management, governance frameworks, and measuring AI investment ROI — bridging technical depth with leadership strategy."
+      tags: ["PMI","GenAI Strategy","Governance","ROI Analysis"]
+  practices_title: "AI Engineering <span class='accent'>Practices</span>"
+  practices:
+    - icon: "🌙"
+      title: "Privacy-First AI"
+      desc: "On-device ML at the edge for sensitive data. Core ML models on iOS, ML Kit on Android — no data leaves the device. Zero-knowledge processing for PII."
+    - icon: "⚡"
+      title: "Low-Latency Inference"
+      desc: "Model quantization, pruning, and hardware-accelerated inference. Sub-100ms response targets for real-time AI features during user interaction."
+    - icon: "🎯"
+      title: "Hallucination Prevention"
+      desc: "RAG with confidence thresholds, citation back-ends, and ground-truth verification layers. Fallback mechanisms when AI uncertainty exceeds safe operating bounds."
+    - icon: "🧩"
+      title: "Agentic Architectures"
+      desc: "Multi-agent orchestration for complex tasks: research agents, content agents, and validation agents working in sequence or parallel for robust AI workflows."
+  certs_title: "AI & ML <span class='accent'>Certifications</span>"
+  aiCerts:
+    - title: "AI Systems Design: RAG Pipelines and LLM Architecture"
+      issuer: "Coursera"
+      date: "Apr 2026"
+      featured: true
+    - title: "MLOps and LLMOps: Deploying and Scaling AI in Production"
+      issuer: "Board Infinity"
+      date: "May 2026"
+      featured: true
+    - title: "AI Agents Fundamentals"
+      issuer: "Hugging Face"
+      date: "Jul 2025"
+      featured: true
+    - title: "AI Tools Workshop"
+      issuer: "Be10x"
+      date: "May 2026"
+      featured: false
+    - title: "Generative AI Overview for Project Managers"
+      issuer: "Project Management Institute"
+      date: "Jan 2024"
+      featured: false
+  contact_title: "Let's Build <span class='accent'>Together</span>"
+  contact_subtitle: "From AI-powered mobile apps to enterprise RAG pipelines — I architect intelligent solutions that ship."

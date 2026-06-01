@@ -1,0 +1,209 @@
+// Sector Hero
+.mr-sector-hero {
+  position: relative; min-height: 75vh; margin-top: var(--nav-h);
+  background: var(--gradient-hero);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; overflow: hidden; padding: 3rem 1.5rem;
+}
+.mr-sector-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(ellipse at 50% 50%, var(--accent-subtle) 0%, transparent 55%);
+  pointer-events: none;
+  animation: heroPulse 8s ease-in-out infinite alternate;
+}
+.mr-sector-hero canvas { position: absolute; inset: 0; pointer-events: none; }
+.mr-sector-hero-content { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+.mr-sector-icon-wrap { margin-bottom: 0.5rem; }
+.mr-sector-icon {
+  font-size: 3.5rem;
+  width: 90px; height: 90px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-subtle);
+  border: 1px solid var(--border-accent);
+  border-radius: 50%;
+  animation: floatAvatar 6s ease-in-out infinite;
+}
+.mr-sector-tagline-line {
+  font-family: var(--font-mono); font-size: 0.75rem;
+  color: var(--accent); background: var(--accent-subtle);
+  border: 1px solid var(--border-accent);
+  padding: 0.3rem 1rem; border-radius: 50px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.mr-sector-hero-title {
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 800; line-height: 1.1;
+  letter-spacing: -0.02em; color: var(--text-heading);
+}
+.mr-sector-hero-title .accent {
+  background: var(--gradient-badge);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.mr-sector-hero-sub {
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  color: var(--text-secondary); font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+// Sector Stats
+.mr-sector-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+}
+.mr-sector-stat-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2.5rem 1.5rem;
+  text-align: center; transition: all var(--transition);
+}
+.mr-sector-stat-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+.mr-sector-stat-num {
+  display: block; font-size: 2.5rem; font-weight: 800;
+  background: var(--gradient-badge);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; line-height: 1; margin-bottom: 0.6rem;
+}
+.mr-sector-stat-label { color: var(--text-secondary); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.02em; }
+
+// Sector Tech Grid
+.mr-sector-tech-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+.mr-sector-tech-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2rem;
+  transition: all var(--transition);
+}
+.mr-sector-tech-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+.mr-sector-tech-header {
+  display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.4rem;
+  padding-bottom: 1rem; border-bottom: 1px solid var(--border);
+}
+.mr-sector-tech-icon { font-size: 1.3rem; }
+.mr-sector-tech-header h3 { font-size: 1rem; font-weight: 700; color: var(--text-heading); }
+.mr-sector-tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.mr-sector-tag {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em;
+  padding: 0.35rem 0.75rem; border-radius: var(--radius-xs);
+  background: var(--accent-subtle); border: 1px solid var(--border);
+  color: var(--accent); transition: all var(--transition-fast);
+}
+.mr-sector-tag:hover { border-color: var(--border-accent); background: rgba(0,180,230,0.12); }
+
+// Case Studies Grid -- sector
+.mr-caseStudies-grid {
+  display: flex; flex-direction: column; gap: 1.5rem;
+}
+.mr-caseStudy-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2.2rem;
+  position: relative; transition: all var(--transition);
+  display: flex; flex-direction: column; gap: 0.9rem;
+  overflow: hidden;
+}
+.mr-caseStudy-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--gradient-badge);
+  opacity: 0; transition: opacity var(--transition);
+}
+.mr-caseStudy-card:hover::before { opacity: 1;}
+.mr-caseStudy-card:hover {
+  border-color: var(--border-accent); box-shadow: var(--shadow-card-hover);
+  transform: translateY(-5px); background: var(--bg-card-hover);
+}
+.mr-caseStudy-card.featured {
+  background: linear-gradient(160deg, rgba(0,180,230,0.05) 0%, rgba(106,90,205,0.03) 100%);
+  border-color: var(--border-accent);
+}
+.mr-caseStudy-card.featured::before { opacity: 1; }
+.mr-caseStudy-badge {
+  position: absolute; top: 1.2rem; right: 1.2rem;
+  background: var(--gradient-badge); color: #fff;
+  font-size: 0.65rem; font-weight: 700;
+  padding: 0.25rem 0.75rem; border-radius: 50px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.mr-caseStudy-top { display: flex; gap: 1rem; align-items: flex-start; }
+.mr-caseStudy-icon { font-size: 1.8rem; line-height: 1; flex-shrink: 0; }
+.mr-caseStudy-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--text-heading); line-height: 1.4; }
+.mr-caseStudy-desc { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.75; }
+.mr-caseStudy-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: auto; }
+.mr-caseStudy-link {
+  display: inline-block; font-size: 0.85rem; font-weight: 600;
+  color: var(--accent); border-bottom: 1px solid var(--border-accent);
+  padding-bottom: 2px; transition: all var(--transition-fast);
+}
+.mr-caseStudy-link:hover { border-bottom-color: var(--accent); transform: translateX(4px); }
+
+// Sector Practices Grid
+.mr-sector-practices-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+}
+.mr-sector-practice-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2.2rem;
+  transition: all var(--transition);
+}
+.mr-sector-practice-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+.mr-sector-practice-icon-wrap {
+  font-size: 2.5rem; margin-bottom: 1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.mr-sector-practice-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.6rem; }
+.mr-sector-practice-card p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; }
+
+// AI Certs List
+.mr-ai-certs-list {
+  display: flex; flex-direction: column; gap: 1rem; max-width: 720px; margin: 0 auto;
+}
+.mr-ai-cert-card {
+  display: flex; gap: 1rem; align-items: flex-start;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 1.3rem 1.5rem;
+  transition: all var(--transition);
+}
+.mr-ai-cert-card:hover { border-color: var(--border-accent); transform: translateX(4px); }
+.mr-ai-cert-card.featured { border-color: var(--border-accent); background: rgba(0,180,230,0.03); }
+.mr-ai-cert-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 0.5rem;
+}
+.mr-ai-cert-dot.dot-ai { background: #6a5acd; box-shadow: 0 0 8px rgba(106,90,205,0.5); }
+.mr-ai-cert-content { flex: 1; }
+.mr-ai-cert-content h3 { font-size: 0.92rem; font-weight: 600; color: var(--text-heading); margin-bottom: 0.2rem; }
+.mr-ai-cert-content p { color: var(--text-secondary); font-size: 0.8rem; }
+.mr-ai-cert-badge {
+  font-size: 0.6rem; font-weight: 700; color: #ffd700;
+  background: rgba(255,215,0,0.08); border: 1px solid rgba(255,215,0,0.25);
+  padding: 0.15rem 0.5rem; border-radius: 50px;
+  text-transform: uppercase; letter-spacing: 0.02em; white-space: nowrap;
+}
+
+// RESPONSIVE
+@media (max-width: 900px) {
+  .mr-sector-stats { grid-template-columns: repeat(2, 1fr); }
+  .mr-sector-tech-grid { grid-template-columns: repeat(2, 1fr); }
+  .mr-sector-practices-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .mr-sector-stats { grid-template-columns: 1fr 1fr; }
+  .mr-sector-tech-grid { grid-template-columns: 1fr; }
+  .mr-caseStudies-grid { gap: 1.2rem; }
+  .mr-caseStudy-card.featured { padding: 1.8rem; }
+  .mr-sector-hero { min-height: 65vh; }
+  .mr-sector-hero-title { font-size: 2rem; }
+  .mr-sector-icon { font-size: 2.5rem; width: 70px; height: 70px; }
+}

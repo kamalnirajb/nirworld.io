@@ -1,0 +1,121 @@
+{% capture mobile_hero %}
+<section class="mr-sector-hero">
+<canvas id="particleCanvas"></canvas>
+<div class="mr-sector-hero-content">
+  <div class="mr-sector-icon-wrap">
+    <div class="mr-sector-icon">{{ site.data.content.mobile_apps.hero.icon }}</div>
+  </div>
+  <p class="mr-sector-tagline-line">{{ site.data.content.mobile_apps.hero.label }}</p>
+  <h1 class="mr-sector-hero-title">{{ site.data.content.mobile_apps.hero.title }}</h1>
+  <p class="mr-sector-hero-sub">{{ site.data.content.mobile_apps.hero.subtitle }}</p>
+  <a href="{{ site.data.content.mobile_apps.hero.cta_link }}" class="btn bgc-ghost">{{ site.data.content.mobile_apps.hero.cta_text }}</a>
+</div>
+<div class="mr-scroll-indicator">
+  <span></span>
+</div>
+</section>
+{% endcapture %}
+
+{% capture mobile_stats %}
+<section class="section section-dark">
+<div class="container">
+<div class="mr-sector-stats">
+{% for stat in site.data.content.mobile_apps.stats %}
+  <div class="mr-sector-stat-card">
+    <span class="mr-sector-stat-num">{{ stat.value }}</span>
+    <span class="mr-sector-stat-label">{{ stat.label }}</span>
+  </div>
+{% endfor %}
+</div>
+</div>
+</section>
+{% endcapture %}
+
+{% capture mobile_tech %}
+<section class="section">
+<div class="container">
+  <h2 class="section-title">{{ site.data.content.mobile_apps.sections_title }}</h2>
+  <div class="mr-sector-tech-grid">
+{% for cat in site.data.content.mobile_apps.tech_categories %}
+  <div class="mr-sector-tech-card">
+    <div class="mr-sector-tech-header">
+      <span class="mr-sector-tech-icon">{{ cat.icon }}</span>
+      <h3>{{ cat.name }}</h3>
+    </div>
+    <div class="mr-sector-tech-tags">
+{% for tag in cat.tags %}
+      <span class="mr-sector-tag">{{ tag }}</span>
+{% endfor %}
+    </div>
+  </div>
+{% endfor %}
+  </div>
+</div>
+</section>
+{% endcapture %}
+
+{% capture mobile_caseStudies %}
+<section class="section section-dark">
+<div class="container">
+  <h2 class="section-title">{{ site.data.content.mobile_apps.caseStudies_title }}</h2>
+  <div class="mr-caseStudies-grid">
+{% for cs in site.data.content.mobile_apps.caseStudies %}
+  <div class="mr-caseStudy-card{% if cs.featured %} featured{% endif %}">
+  {% if cs.featured %}<div class="mr-caseStudy-badge">Featured</div>{% endif %}
+    <div class="mr-caseStudy-top">
+      <span class="mr-caseStudy-icon">{{ cs.icon }}</span>
+      <h3>{{ cs.title }}</h3>
+    </div>
+    <p class="mr-caseStudy-desc">{{ cs.desc }}</p>
+    <div class="mr-caseStudy-tags">
+{% for tag in cs.tags %}
+      <span class="mr-sector-tag">{{ tag }}</span>
+{% endfor %}
+    </div>
+    {% if cs.link_url %}
+      <a href="{{ cs.link_url }}" target="_blank" rel="noopener noreferrer" class="mr-caseStudy-link">{{ cs.link_text }}</a>
+    {% endif %}
+  </div>
+{% endfor %}
+  </div>
+</div>
+</section>
+{% endcapture %}
+
+{% capture mobile_practices %}
+<section class="section">
+<div class="container">
+  <h2 class="section-title">{{ site.data.content.mobile_apps.practices_title }}</h2>
+  <div class="mr-sector-practices-grid">
+{% for p in site.data.content.mobile_apps.practices %}
+  <div class="mr-sector-practice-card">
+    <div class="mr-sector-practice-icon-wrap">{{ p.icon }}</div>
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.desc }}</p>
+  </div>
+{% endfor %}
+  </div>
+</div>
+</section>
+{% endcapture %}
+
+{% capture mobile_contact %}
+<section id="contact" class="section section-dark">
+<div class="container contact-container">
+  <h2 class="section-title">{{ site.data.content.mobile_apps.contact_title }}</h2>
+  <p class="contact-sub">{{ site.data.content.mobile_apps.contact_subtitle }}</p>
+  <div class="contact-cards">
+{% for link in site.data.content.contact.links %}
+  <a href="{{ link.url }}" class="contact-card" {% if link.id != "" %}id="{{ link.id }}"{% endif %} {% if link.target != "" %}target="{{ link.target }}" rel="noopener noreferrer"{% endif %}>
+    <span class="contact-icon">{{ link.icon }}</span>
+    <span>{{ link.text }}</span>
+  </a>
+{% endfor %}
+  </div>
+  <p class="contact-location">📍 {{ site.data.content.contact.location.text }}</p>
+</div>
+</section>
+{% endcapture %}
+
+{% assign mobile_app = mobile_hero | append: mobile_stats | append: mobile_tech | append: mobile_caseStudies | append: mobile_practices | append: mobile_contact %}
+{{ mobile_app }}
