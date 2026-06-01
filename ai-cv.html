@@ -21,7 +21,149 @@
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#portfolio">Portfolio</a></li>
         <li><a href="mobile-apps.html">Mobile Apps</a></li>
-        <li><a href="ai-cv.html">AI & Computer Vision</a></li>
+        <li><a href="ai-cv.html" class="active">AI & Computer Vision</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="hamburger" id="h
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SECTOR HERO -->
+  <section class="mr-sector-hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="mr-sector-hero-content">
+      <div class="mr-sector-icon-wrap">
+        <div class="mr-sector-icon">{{ site.data.content.ai_cv.hero.icon }}</div>
+      </div>
+      <p class="mr-sector-tagline-line">{{ site.data.content.ai_cv.hero.label }}</p>
+      <h1 class="mr-sector-hero-title">{{ site.data.content.ai_cv.hero.title }}</h1>
+      <p class="mr-sector-hero-sub">{{ site.data.content.ai_cv.hero.subtitle }}</p>
+      <a href="{{ site.data.content.ai_cv.hero.cta_link }}" class="btn bgc-ghost">{{ site.data.content.ai_cv.hero.cta_text }}</a>
+    </div>
+    <div class="mr-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- KEY STATS -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="mr-sector-stats">
+        {% for stat in site.data.content.ai_cv.stats %}
+        <div class="mr-sector-stat-card">
+          <span class="mr-sector-stat-num">{{ stat.value }}</span>
+          <span class="mr-sector-stat-label">{{ stat.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">{{ site.data.content.ai_cv.sections_title }}</h2>
+      <div class="mr-sector-tech-grid">
+        {% for cap in site.data.content.ai_cv.capabilities %}
+        <div class="mr-sector-tech-card">
+          <div class="mr-sector-tech-header">
+            <span class="mr-sector-tech-icon">{{ cap.icon }}</span>
+            <h3>{{ cap.name }}</h3>
+          </div>
+          <div class="mr-sector-tech-tags">
+            {% for tag in cap.tags %}
+            <span class="mr-sector-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED USE CASES -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">{{ site.data.content.ai_cv.useCases_title }}</h2>
+      <div class="mr-caseStudies-grid">
+        {% for uc in site.data.content.ai_cv.useCases %}
+        <div class="mr-caseStudy-card{% if uc.featured %} featured{% endif %}">
+          {% if uc.featured %}<div class="mr-caseStudy-badge">Featured</div>{% endif %}
+          <div class="mr-caseStudy-top">
+            <span class="mr-caseStudy-icon">{{ uc.icon }}</span>
+            <h3>{{ uc.title }}</h3>
+          </div>
+          <p class="mr-caseStudy-desc">{{ uc.desc }}</p>
+          <div class="mr-caseStudy-tags">
+            {% for tag in uc.tags %}
+            <span class="mr-sector-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- AI PRACTICES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">{{ site.data.content.ai_cv.practices_title }}</h2>
+      <div class="mr-sector-practices-grid">
+        {% for p in site.data.content.ai_cv.practices %}
+        <div class="mr-sector-practice-card">
+          <div class="mr-sector-practice-icon-wrap">{{ p.icon }}</div>
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.desc }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- AI CERTIFICATIONS -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">{{ site.data.content.ai_cv.certs_title }}</h2>
+      <div class="mr-ai-certs-list">
+        {% for cert in site.data.content.ai_cv.aiCerts %}
+        <div class="mr-ai-cert-card{% if cert.featured %} featured{% endif %}">
+          <div class="mr-ai-cert-dot dot-ai"></div>
+          <div class="mr-ai-cert-content">
+            <h3>{{ cert.title }}</h3>
+            <p>{{ cert.issuer }} · {{ cert.date }}</p>
+          </div>
+          {% if cert.featured %}<span class="mr-ai-cert-badge">Featured</span>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="section section-dark">
+    <div class="container contact-container">
+      <h2 class="section-title">{{ site.data.content.ai_cv.contact_title }}</h2>
+      <p class="contact-sub">{{ site.data.content.ai_cv.contact_subtitle }}</p>
+      <div class="contact-cards">
+        {% for link in site.data.content.contact.links %}
+        <a href="{{ link.url }}" class="contact-card" {% if link.target != "" %}target="{{ link.target }}" rel="noopener noreferrer"{% endif %}>
+          <span class="contact-icon">{{ link.icon }}</span>
+          <span>{{ link.text }}</span>
+        </a>
+        {% endfor %}
+      </div>
+      <p class="contact-location">📍 {{ site.data.content.contact.location.text }}</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Niraj Kumar · Back to <a href="index.html">Portfolio</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
